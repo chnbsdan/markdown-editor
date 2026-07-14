@@ -419,8 +419,16 @@
         console.warn('Twikoo 未加载');
         return;
       }
+      
       const container = document.getElementById('tcomment');
-      if (!container || container.dataset.initialized === 'true') return;
+      if (!container) {
+        console.warn('评论容器 #tcomment 未找到，等待重试...');
+        setTimeout(initTwikoo, 500);
+        return;
+      }
+      
+      if (container.dataset.initialized === 'true') return;
+      
       try {
         twikoo.init({
           el: '#tcomment',
@@ -438,6 +446,8 @@
     const observer = new MutationObserver(function() {
       const modal = document.getElementById('help-modal');
       if (modal && modal.classList.contains('show')) {
+        console.log('帮助弹窗已打开，准备初始化 Twikoo...');
+        // 延迟 500ms 等待 DOM 完全渲染
         setTimeout(initTwikoo, 500);
       }
     });
@@ -447,6 +457,7 @@
       if (modal) {
         observer.observe(modal, { attributes: true, attributeFilter: ['class'] });
       }
+      console.log('Twikoo 监听器已启动');
     });
   })();
 </script>
