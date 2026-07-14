@@ -111,7 +111,7 @@
 ### 项目结构
 
 ```
-lengyi-markdown-editor/
+markdown-editor/
 ├── index.html                 # 主入口 HTML
 ├── css/
 │   └── style.css              # 全局样式
@@ -128,10 +128,7 @@ lengyi-markdown-editor/
 │       ├── modal.js           # 模态框管理（帮助、查找、图片等）
 │       └── export.js          # 导出功能（MD/HTML/Word/PDF/图片）
 ├── web-to-md-proxy.py         # 可选本地代理（网页转 Markdown）
-├── public/                    # 静态资源
-│   ├── 关于作者.md
-│   ├── 产品海报.png
-│   └── 产品界面.png
+├── public/                    # 静态资源（可选）
 └── README.md                  # 项目说明
 ```
 
@@ -165,10 +162,10 @@ lengyi-markdown-editor/
 
 ```bash
 # 克隆仓库
-git clone https://github.com/woyin2024/lengyi-markdown-editor.git
+git clone https://github.com/chnbsdan/markdown-editor.git
 
 # 进入项目目录
-cd lengyi-markdown-editor
+cd markdown-editor
 
 # 双击 index.html 在浏览器中打开
 ```
@@ -220,7 +217,7 @@ python web-to-md-proxy.py
 
 | 亮色主题 | 暗色主题 |
 |:---:|:---:|
-| ![](public/产品界面.png) | ![](public/产品界面.png) |
+| 待补充 | 待补充 |
 
 ---
 
@@ -242,13 +239,15 @@ python web-to-md-proxy.py
 
 本项目基于 [MIT License](LICENSE) 开源。
 
-你可以自由使用、修改和分发。商业使用请获得授权。作者仅希望：在一个安静的下午，当你写出令自己满意的文字时，能记得这个小小的工具是从哪里开始的。
-
 ---
 
 ## 👤 关于作者
 
+**chnbsdan**，Vibe Coding 开发者，热爱钻研 Prompts、Skills 和 Agents。
 
+- **GitHub**：[chnbsdan](https://github.com/chnbsdan)
+
+---
 
 ## ⭐ Star History
 
