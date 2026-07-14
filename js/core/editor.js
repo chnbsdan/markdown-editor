@@ -242,3 +242,8 @@ const Editor = {
 };
 
 window.Editor = Editor;
+
+// ==================== 暴露到全局 ====================
+window.undo = Editor.undo.bind(Editor);
+window.redo = Editor.redo.bind(Editor);
+window.getActiveEditor = Editor.getActiveEditor.bind(Editor);
