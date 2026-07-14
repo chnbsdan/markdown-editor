@@ -31,7 +31,7 @@ const i18n = {
   <li>需要登录的页面，可运行 <code>python web-to-md-proxy.py --bookmark</code> 生成书签小工具提取。</li>
 </ul>
 <p><b>常用快捷键</b>：<code>Ctrl+S</code> 保存，<code>Ctrl+Z</code> 撤销，<code>Ctrl+Y / Ctrl+Shift+Z</code> 重做，<code>Ctrl+B</code> 加粗，<code>Ctrl+I</code> 斜体，<code>Ctrl+U</code> 下划线，<code>Ctrl+K</code> 链接，<code>Ctrl+Shift+K</code> 图片，<code>Ctrl+F</code> 查找，<code>Ctrl+H</code> 替换，<code>Tab</code> 插入 4 空格缩进。</p>
-<p style="color:var(--text-muted);font-size:12px;">本编辑器由「沃垠AI」主理人冷逸开发，功能建议请联系微信：lengcp2013</p>`,
+<p style="color:var(--text-muted);font-size:12px;">本编辑器由 Hangdn 二次开发，功能建议请电报联系：https://t.me/chnbsdan</p>`,
     welcomeDoc: '# 欢迎使用 Markdown 编辑器\n\n在左侧输入 Markdown，右侧即可**实时预览**。\n\n## 功能\n\n- 自动保存到浏览器本地\n- 支持导入 / 导出 `.md` 文件\n- 右侧「源码」模式可直接编辑\n- 可将网页链接转换为 Markdown\n- 快捷键：Ctrl+S 保存\n\n```js\nconsole.log("Hello Markdown!");\n```',
     brand: 'Markdown编辑器',
     filenameTitle: '文件名',
@@ -223,7 +223,7 @@ const i18n = {
   <li>需要登入的頁面，可執行 <code>python web-to-md-proxy.py --bookmark</code> 生成書籤小工具提取。</li>
 </ul>
 <p><b>常用快捷鍵</b>：<code>Ctrl+S</code> 儲存，<code>Ctrl+Z</code> 復原，<code>Ctrl+Y / Ctrl+Shift+Z</code> 重做，<code>Ctrl+B</code> 粗體，<code>Ctrl+I</code> 斜體，<code>Ctrl+U</code> 底線，<code>Ctrl+K</code> 連結，<code>Ctrl+Shift+K</code> 圖片，<code>Ctrl+F</code> 尋找，<code>Ctrl+H</code> 取代，<code>Tab</code> 插入 4 空格縮排。</p>
-<p style="color:var(--text-muted);font-size:12px;">本編輯器由「沃垠AI」主理人冷逸開發，功能建議請聯繫微信：lengcp2013</p>`,
+<p style="color:var(--text-muted);font-size:12px;">本編輯器由 Hangdn 二次開發，功能建議請電報聯繫：https://t.me/chnbsdan</p>`,
     welcomeDoc: '# 歡迎使用 Markdown 編輯器\n\n在左側輸入 Markdown，右側即可**即時預覽**。\n\n## 功能\n\n- 自動儲存到瀏覽器本地\n- 支援匯入 / 匯出 `.md` 檔案\n- 右側「原始碼」模式可直接編輯\n- 可將網頁連結轉換為 Markdown\n- 快捷鍵：Ctrl+S 儲存\n\n```js\nconsole.log("Hello Markdown!");\n```',
     brand: 'Markdown編輯器',
     filenameTitle: '檔案名稱',
@@ -415,7 +415,7 @@ const i18n = {
   <li>For pages that require login, run <code>python web-to-md-proxy.py --bookmark</code> to generate a bookmarklet.</li>
 </ul>
 <p><b>Common shortcuts</b>: <code>Ctrl+S</code> Save, <code>Ctrl+Z</code> Undo, <code>Ctrl+Y / Ctrl+Shift+Z</code> Redo, <code>Ctrl+B</code> Bold, <code>Ctrl+I</code> Italic, <code>Ctrl+U</code> Underline, <code>Ctrl+K</code> Link, <code>Ctrl+Shift+K</code> Image, <code>Ctrl+F</code> Find, <code>Ctrl+H</code> Replace, <code>Tab</code> insert 4-space indent.</p>
-<p style="color:var(--text-muted);font-size:12px;">Developed by Leng Yi of Woyin AI. Feedback via WeChat: lengcp2013</p>`,
+<p style="color:var(--text-muted);font-size:12px;">This editor is maintained by Hangdn. For feature suggestions, please contact via Telegram: https://t.me/chnbsdan</p>`,
     welcomeDoc: '# Welcome to the Markdown Editor\n\nType Markdown on the left and see the **live preview** on the right.\n\n## Features\n\n- Auto-saved to browser local storage\n- Import / export `.md` files\n- "Source" mode on the right for direct editing\n- Convert web links to Markdown\n- Shortcut: Ctrl+S to save\n\n```js\nconsole.log("Hello Markdown!");\n```',
     brand: 'Markdown Editor',
     filenameTitle: 'Filename',
@@ -607,7 +607,7 @@ const i18n = {
   <li>ログインが必要なページは、<code>python web-to-md-proxy.py --bookmark</code> を実行してブックマークレットを生成して抽出します。</li>
 </ul>
 <p><b>よく使うショートカット</b>：<code>Ctrl+S</code> 保存、<code>Ctrl+Z</code> 元に戻す、<code>Ctrl+Y / Ctrl+Shift+Z</code> やり直す、<code>Ctrl+B</code> 太字、<code>Ctrl+I</code> 斜体、<code>Ctrl+U</code> 下線、<code>Ctrl+K</code> リンク、<code>Ctrl+Shift+K</code> 画像、<code>Ctrl+F</code> 検索、<code>Ctrl+H</code> 置換、<code>Tab</code> 4 スペース字下げ。</p>
-<p style="color:var(--text-muted);font-size:12px;">本エディタは「沃垠AI」の主理人である冷逸（Leng Yi）によって開発されました。機能提案は WeChat: lengcp2013 まで</p>`,
+<p style="color:var(--text-muted);font-size:12px;">このエディターは Hangdn が二次開発しました。機能提案は Telegram まで：https://t.me/chnbsdan</p>`,
     welcomeDoc: '# Markdown エディタへようこそ\n\n左側に Markdown を入力すると、右側に**リアルタイムプレビュー**が表示されます。\n\n## 機能\n\n- ブラウザのローカルに自動保存\n- `.md` ファイルのインポート / エクスポート\n- 右側の「ソース」モードで直接編集\n- Web リンクを Markdown に変換\n- ショートカット：Ctrl+S で保存\n\n```js\nconsole.log("Hello Markdown!");\n```',
     brand: 'Markdownエディタ',
     filenameTitle: 'ファイル名',
@@ -799,7 +799,7 @@ const i18n = {
   <li>로그인이 필요한 페이지는 <code>python web-to-md-proxy.py --bookmark</code>를 실행해 북마크릿을 생성해 추출하세요.</li>
 </ul>
 <p><b>자주 사용하는 단축키</b>: <code>Ctrl+S</code> 저장, <code>Ctrl+Z</code> 실행 취소, <code>Ctrl+Y / Ctrl+Shift+Z</code> 다시 실행, <code>Ctrl+B</code> 굵게, <code>Ctrl+I</code> 기울임, <code>Ctrl+U</code> 밑줄, <code>Ctrl+K</code> 링크, <code>Ctrl+Shift+K</code> 이미지, <code>Ctrl+F</code> 찾기, <code>Ctrl+H</code> 바꾸기, <code>Tab</code> 4칸 들여쓰기.</p>
-<p style="color:var(--text-muted);font-size:12px;">본 편집기는 「沃垠AI」대표 랭이(Leng Yi)가 개발했습니다. 기능 제안은 WeChat: lengcp2013</p>`,
+<p style="color:var(--text-muted);font-size:12px;">이 편집기는 Hangdn이 2차 개발했습니다. 기능 제안은 Telegram으로 연락주세요：https://t.me/chnbsdan</p>`,
     welcomeDoc: '# Markdown 편집기에 오신 것을 환영합니다\n\n왼쪽에 Markdown을 입력하면 오른쪽에 **실시간 미리보기**가 표시됩니다.\n\n## 기능\n\n- 브라우저 로컬에 자동 저장\n- `.md` 파일 가져오기 / 내보내기\n- 오른쪽「소스」모드에서 직접 편집\n- 웹 링크를 Markdown으로 변환\n- 단축키: Ctrl+S 저장\n\n```js\nconsole.log("Hello Markdown!");\n```',
     brand: 'Markdown 편집기',
     filenameTitle: '파일 이름',
@@ -991,7 +991,7 @@ const i18n = {
   <li>Para páginas que requieren inicio de sesión, ejecuta <code>python web-to-md-proxy.py --bookmark</code> para generar un bookmarklet.</li>
 </ul>
 <p><b>Atajos comunes</b>: <code>Ctrl+S</code> Guardar, <code>Ctrl+Z</code> Deshacer, <code>Ctrl+Y / Ctrl+Shift+Z</code> Rehacer, <code>Ctrl+B</code> Negrita, <code>Ctrl+I</code> Cursiva, <code>Ctrl+U</code> Subrayado, <code>Ctrl+K</code> Enlace, <code>Ctrl+Shift+K</code> Imagen, <code>Ctrl+F</code> Buscar, <code>Ctrl+H</code> Reemplazar, <code>Tab</code> insertar sangría de 4 espacios.</p>
-<p style="color:var(--text-muted);font-size:12px;">Desarrollado por Leng Yi de Woyin AI. Sugerencias por WeChat: lengcp2013</p>`,
+<p style="color:var(--text-muted);font-size:12px;">Este editor es mantenido por Hangdn. Para sugerencias de funciones, contacta vía Telegram: https://t.me/chnbsdan</p>`,
     welcomeDoc: '# Bienvenido al Editor Markdown\n\nEscribe Markdown a la izquierda y ve la **vista previa en tiempo real** a la derecha.\n\n## Características\n\n- Guardado automático en el almacenamiento local del navegador\n- Importar / exportar archivos `.md`\n- Modo "Fuente" a la derecha para edición directa\n- Convertir enlaces web a Markdown\n- Atajo: Ctrl+S para guardar\n\n```js\nconsole.log("Hello Markdown!");\n```',
     brand: 'Editor Markdown',
     filenameTitle: 'Nombre de archivo',
@@ -1183,7 +1183,7 @@ const i18n = {
   <li>Pour les pages nécessitant une connexion, exécutez <code>python web-to-md-proxy.py --bookmark</code> pour générer un bookmarklet.</li>
 </ul>
 <p><b>Raccourcis courants</b> : <code>Ctrl+S</code> Enregistrer, <code>Ctrl+Z</code> Annuler, <code>Ctrl+Y / Ctrl+Shift+Z</code> Rétablir, <code>Ctrl+B</code> Gras, <code>Ctrl+I</code> Italique, <code>Ctrl+U</code> Souligné, <code>Ctrl+K</code> Lien, <code>Ctrl+Shift+K</code> Image, <code>Ctrl+F</code> Rechercher, <code>Ctrl+H</code> Remplacer, <code>Tab</code> insérer une indentation de 4 espaces.</p>
-<p style="color:var(--text-muted);font-size:12px;">Développé par Leng Yi de Woyin AI. Suggestions via WeChat : lengcp2013</p>`,
+<p style="color:var(--text-muted);font-size:12px;">Cet éditeur est maintenu par Hangdn. Pour des suggestions de fonctionnalités, contactez via Telegram : https://t.me/chnbsdan</p>`,
     welcomeDoc: '# Bienvenue dans l’éditeur Markdown\n\nSaisissez du Markdown à gauche et voyez l’**aperçu en direct** à droite.\n\n## Fonctionnalités\n\n- Sauvegarde automatique dans le stockage local du navigateur\n- Importer / exporter des fichiers `.md`\n- Mode « Source » à droite pour édition directe\n- Convertir des liens Web en Markdown\n- Raccourci : Ctrl+S pour enregistrer\n\n```js\nconsole.log("Hello Markdown!");\n```',
     brand: 'Éditeur Markdown',
     filenameTitle: 'Nom du fichier',
@@ -1375,7 +1375,7 @@ const i18n = {
   <li>Für Seiten mit Anmeldung führe <code>python web-to-md-proxy.py --bookmark</code> aus, um ein Bookmarklet zu erzeugen.</li>
 </ul>
 <p><b>Häufige Tastenkürzel</b>: <code>Ctrl+S</code> Speichern, <code>Ctrl+Z</code> Rückgängig, <code>Ctrl+Y / Ctrl+Shift+Z</code> Wiederherstellen, <code>Ctrl+B</code> Fett, <code>Ctrl+I</code> Kursiv, <code>Ctrl+U</code> Unterstrichen, <code>Ctrl+K</code> Link, <code>Ctrl+Shift+K</code> Bild, <code>Ctrl+F</code> Suchen, <code>Ctrl+H</code> Ersetzen, <code>Tab</code> 4 Leerzeichen Einzug einfügen.</p>
-<p style="color:var(--text-muted);font-size:12px;">Entwickelt von Leng Yi von Woyin AI. Feedback über WeChat: lengcp2013</p>`,
+<p style="color:var(--text-muted);font-size:12px;">Este editor é mantido por Hangdn. Para sugestões de funcionalidades, contate via Telegram: https://t.me/chnbsdan</p>`,
     welcomeDoc: '# Willkommen im Markdown-Editor\n\nGeben Sie links Markdown ein und sehen Sie rechts die **Live-Vorschau**.\n\n## Funktionen\n\n- Automatisches Speichern im lokalen Browser-Speicher\n- .md-Dateien importieren / exportieren\n- „Quelle“-Modus rechts für direkte Bearbeitung\n- Weblinks in Markdown umwandeln\n- Tastenkürzel: Ctrl+S zum Speichern\n\n```js\nconsole.log("Hello Markdown!");\n```',
     brand: 'Markdown-Editor',
     filenameTitle: 'Dateiname',
@@ -1567,7 +1567,7 @@ const i18n = {
   <li>Для страниц, требующих входа, запустите <code>python web-to-md-proxy.py --bookmark</code>, чтобы создать букмарклет.</li>
 </ul>
 <p><b>Частые горячие клавиши</b>: <code>Ctrl+S</code> Сохранить, <code>Ctrl+Z</code> Отменить, <code>Ctrl+Y / Ctrl+Shift+Z</code> Повторить, <code>Ctrl+B</code> Жирный, <code>Ctrl+I</code> Курсив, <code>Ctrl+U</code> Подчеркнутый, <code>Ctrl+K</code> Ссылка, <code>Ctrl+Shift+K</code> Изображение, <code>Ctrl+F</code> Найти, <code>Ctrl+H</code> Заменить, <code>Tab</code> вставить отступ в 4 пробела.</p>
-<p style="color:var(--text-muted);font-size:12px;">Разработано Лэн И (Leng Yi) из Woyin AI. Предложения по WeChat: lengcp2013</p>`,
+<p style="color:var(--text-muted);font-size:12px;">Этот редактор поддерживается Hangdn. Для предложений по функциям свяжитесь через Telegram: https://t.me/chnbsdan</p>`,
     welcomeDoc: '# Добро пожаловать в редактор Markdown\n\nВведите Markdown слева и увидите **предпросмотр в реальном времени** справа.\n\n## Возможности\n\n- Автоматическое сохранение в локальное хранилище браузера\n- Импорт / экспорт файлов `.md`\n- Режим «Исходный код» справа для прямого редактирования\n- Преобразование веб-ссылок в Markdown\n- Горячая клавиша: Ctrl+S для сохранения\n\n```js\nconsole.log("Hello Markdown!");\n```',
     brand: 'Редактор Markdown',
     filenameTitle: 'Имя файла',
@@ -1759,7 +1759,7 @@ const i18n = {
   <li>Para páginas que exigem login, execute <code>python web-to-md-proxy.py --bookmark</code> para gerar um bookmarklet.</li>
 </ul>
 <p><b>Atalhos comuns</b>: <code>Ctrl+S</code> Salvar, <code>Ctrl+Z</code> Desfazer, <code>Ctrl+Y / Ctrl+Shift+Z</code> Refazer, <code>Ctrl+B</code> Negrito, <code>Ctrl+I</code> Itálico, <code>Ctrl+U</code> Sublinhado, <code>Ctrl+K</code> Link, <code>Ctrl+Shift+K</code> Imagem, <code>Ctrl+F</code> Localizar, <code>Ctrl+H</code> Substituir, <code>Tab</code> inserir recuo de 4 espaços.</p>
-<p style="color:var(--text-muted);font-size:12px;">Desenvolvido por Leng Yi da Woyin AI. Sugestões pelo WeChat: lengcp2013</p>`,
+<p style="color:var(--text-muted);font-size:12px;">Este editor é mantido por Hangdn. Para sugestões de funcionalidades, contate via Telegram: https://t.me/chnbsdan</p>`,
     welcomeDoc: '# Bem-vindo ao Editor Markdown\n\nDigite Markdown à esquerda e veja a **pré-visualização em tempo real** à direita.\n\n## Recursos\n\n- Salvamento automático no armazenamento local do navegador\n- Importar / exportar arquivos `.md`\n- Modo "Fonte" à direita para edição direta\n- Converter links da web para Markdown\n- Atalho: Ctrl+S para salvar\n\n```js\nconsole.log("Hello Markdown!");\n```',
     brand: 'Editor Markdown',
     filenameTitle: 'Nome do arquivo',
