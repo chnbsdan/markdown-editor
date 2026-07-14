@@ -410,73 +410,24 @@
 <!-- Twikoo 评论系统 -->
 <script src="https://cdn.jsdelivr.net/npm/twikoo@1.7.14/dist/twikoo.min.js"></script>
 <script>
-  (function() {
-    let twikooInitialized = false;
-    let checkInterval = null;
-
-    function initTwikoo() {
-      if (twikooInitialized) return;
-      if (typeof twikoo === 'undefined') {
-        console.warn('Twikoo 未加载');
-        return;
-      }
-      
-      const container = document.getElementById('tcomment');
-      if (!container) {
-        // 容器还没出现，继续等待
-        return;
-      }
-      
-      if (container.dataset.initialized === 'true') return;
-      
-      try {
-        twikoo.init({
-          el: '#tcomment',
-          envId: 'https://twikoo.hangdn.com',
-        });
-        container.dataset.initialized = 'true';
-        twikooInitialized = true;
-        if (checkInterval) {
-          clearInterval(checkInterval);
-          checkInterval = null;
-        }
-        console.log('✅ Twikoo 评论初始化成功');
-      } catch (e) {
-        console.error('Twikoo 初始化失败:', e);
-      }
-    }
-
-    // 监听帮助弹窗打开
+  // 等页面加载完直接初始化，弹窗打开时再重新初始化
+  document.addEventListener('DOMContentLoaded', function() {
+    // 先监听弹窗打开
+    const modal = document.getElementById('help-modal');
     const observer = new MutationObserver(function() {
-      const modal = document.getElementById('help-modal');
-      if (modal && modal.classList.contains('show')) {
-        console.log('帮助弹窗已打开，开始轮询等待容器...');
-        // 清除之前的轮询
-        if (checkInterval) {
-          clearInterval(checkInterval);
-          checkInterval = null;
-        }
-        // 立即尝试一次
-        initTwikoo();
-        // 每隔 200ms 检查一次，直到容器出现
-        checkInterval = setInterval(initTwikoo, 200);
-      } else {
-        // 弹窗关闭时停止轮询
-        if (checkInterval) {
-          clearInterval(checkInterval);
-          checkInterval = null;
-        }
+      if (modal.classList.contains('show')) {
+        setTimeout(function() {
+          if (typeof twikoo !== 'undefined' && document.getElementById('tcomment')) {
+            twikoo.init({
+              el: '#tcomment',
+              envId: 'https://twikoo.hangdn.com'
+            });
+          }
+        }, 300);
       }
     });
-
-    document.addEventListener('DOMContentLoaded', function() {
-      const modal = document.getElementById('help-modal');
-      if (modal) {
-        observer.observe(modal, { attributes: true, attributeFilter: ['class'] });
-      }
-      console.log('Twikoo 监听器已启动');
-    });
-  })();
+    observer.observe(modal, { attributes: true, attributeFilter: ['class'] });
+  });
 </script>
 
   
