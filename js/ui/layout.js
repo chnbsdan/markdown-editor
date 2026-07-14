@@ -205,3 +205,9 @@ const Layout = {
 };
 
 window.Layout = Layout;
+
+// ==================== 暴露到全局 ====================
+window.togglePane = Layout.togglePane.bind(Layout);
+window.setLayoutMode = Layout.setLayoutMode.bind(Layout);
+window.togglePageFullscreen = Layout.togglePageFullscreen.bind(Layout);
+window.toggleFullscreen = Layout.toggleSystemFullscreen.bind(Layout);
