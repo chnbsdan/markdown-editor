@@ -412,6 +412,7 @@
 <script>
   (function() {
     let twikooInitialized = false;
+    let checkInterval = null;
 
     function initTwikoo() {
       if (twikooInitialized) return;
@@ -422,8 +423,7 @@
       
       const container = document.getElementById('tcomment');
       if (!container) {
-        console.warn('评论容器 #tcomment 未找到，等待重试...');
-        setTimeout(initTwikoo, 500);
+        // 容器还没出现，继续等待
         return;
       }
       
@@ -436,6 +436,10 @@
         });
         container.dataset.initialized = 'true';
         twikooInitialized = true;
+        if (checkInterval) {
+          clearInterval(checkInterval);
+          checkInterval = null;
+        }
         console.log('✅ Twikoo 评论初始化成功');
       } catch (e) {
         console.error('Twikoo 初始化失败:', e);
@@ -446,9 +450,22 @@
     const observer = new MutationObserver(function() {
       const modal = document.getElementById('help-modal');
       if (modal && modal.classList.contains('show')) {
-        console.log('帮助弹窗已打开，准备初始化 Twikoo...');
-        // 延迟 500ms 等待 DOM 完全渲染
-        setTimeout(initTwikoo, 500);
+        console.log('帮助弹窗已打开，开始轮询等待容器...');
+        // 清除之前的轮询
+        if (checkInterval) {
+          clearInterval(checkInterval);
+          checkInterval = null;
+        }
+        // 立即尝试一次
+        initTwikoo();
+        // 每隔 200ms 检查一次，直到容器出现
+        checkInterval = setInterval(initTwikoo, 200);
+      } else {
+        // 弹窗关闭时停止轮询
+        if (checkInterval) {
+          clearInterval(checkInterval);
+          checkInterval = null;
+        }
       }
     });
 
