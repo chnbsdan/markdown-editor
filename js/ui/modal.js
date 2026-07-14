@@ -515,4 +515,34 @@ const Modal = {
   }
 };
 
-window.Modal = Modal;
+// ==================== 暴露到全局 ====================
+// 帮助
+window.openHelp = Modal.openHelp.bind(Modal);
+window.closeHelp = Modal.closeHelp.bind(Modal);
+
+// 网页转 MD
+window.openUrlModal = Modal.openUrlModal.bind(Modal);
+window.closeUrlModal = Modal.closeUrlModal.bind(Modal);
+window.toggleProxyInput = Modal.toggleProxyInput.bind(Modal);
+window.fetchUrl = Modal.fetchUrl.bind(Modal);
+window.convertAndInsert = Modal.convertAndInsert.bind(Modal);
+
+// 查找与替换
+window.openFindModal = Modal.openFindModal.bind(Modal);
+window.closeFindModal = Modal.closeFindModal.bind(Modal);
+window.findNext = Modal.findNext.bind(Modal);
+window.replaceOne = Modal.replaceOne.bind(Modal);
+window.replaceAll = Modal.replaceAll.bind(Modal);
+
+// 图片
+window.openImageModal = Modal.openImageModal.bind(Modal);
+window.closeImageModal = Modal.closeImageModal.bind(Modal);
+window.switchImageTab = Modal.switchImageTab.bind(Modal);
+window.handleImageFileSelect = Modal.handleImageFileSelect.bind(Modal);
+window.confirmImageInsert = Modal.confirmImageInsert.bind(Modal);
+
+// Mermaid
+window.openMermaidModal = Modal.openMermaidModal.bind(Modal);
+window.closeMermaidModal = Modal.closeMermaidModal.bind(Modal);
+window.updateMermaidTemplate = Modal.updateMermaidTemplate.bind(Modal);
+window.confirmMermaidInsert = Modal.confirmMermaidInsert.bind(Modal);
