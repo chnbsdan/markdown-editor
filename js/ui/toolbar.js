@@ -290,3 +290,39 @@ const Toolbar = {
 };
 
 window.Toolbar = Toolbar;
+// ==================== 暴露到全局 ====================
+// 格式化
+window.formatBold = Toolbar.formatBold.bind(Toolbar);
+window.formatItalic = Toolbar.formatItalic.bind(Toolbar);
+window.formatUnderline = Toolbar.formatUnderline.bind(Toolbar);
+window.formatStrikethrough = Toolbar.formatStrikethrough.bind(Toolbar);
+window.formatSubscript = Toolbar.formatSubscript.bind(Toolbar);
+window.formatSuperscript = Toolbar.formatSuperscript.bind(Toolbar);
+window.formatQuote = Toolbar.formatQuote.bind(Toolbar);
+window.formatUnorderedList = Toolbar.formatUnorderedList.bind(Toolbar);
+window.formatOrderedList = Toolbar.formatOrderedList.bind(Toolbar);
+window.formatTaskList = Toolbar.formatTaskList.bind(Toolbar);
+
+// 插入
+window.insertCodeRow = Toolbar.insertCodeRow.bind(Toolbar);
+window.insertCode = Toolbar.insertCode.bind(Toolbar);
+window.insertLink = Toolbar.insertLink.bind(Toolbar);
+window.insertHeading = Toolbar.insertHeading.bind(Toolbar);
+window.insertTable = Toolbar.insertTable.bind(Toolbar);
+
+// 下拉菜单
+window.toggleHeadingMenu = Toolbar.toggleHeadingMenu.bind(Toolbar);
+window.closeHeadingMenu = Toolbar.closeHeadingMenu.bind(Toolbar);
+window.toggleTableMenu = Toolbar.toggleTableMenu.bind(Toolbar);
+window.closeTableMenu = Toolbar.closeTableMenu.bind(Toolbar);
+window.toggleExportMenu = Toolbar.toggleExportMenu.bind(Toolbar);
+window.closeExportMenu = Toolbar.closeExportMenu.bind(Toolbar);
+window.toggleViewMenu = Toolbar.toggleViewMenu.bind(Toolbar);
+window.closeViewMenu = Toolbar.closeViewMenu.bind(Toolbar);
+window.toggleLangMenu = Toolbar.toggleLangMenu.bind(Toolbar);
+window.closeLangMenu = Toolbar.closeLangMenu.bind(Toolbar);
+
+// 其他
+window.toggleTheme = Toolbar.toggleTheme.bind(Toolbar);
+window.clearDoc = Toolbar.clearDoc.bind(Toolbar);
+window.importFile = Toolbar.importFile.bind(Toolbar);
