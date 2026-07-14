@@ -3,8 +3,8 @@
 > 一个纯前端的极简 Markdown 编辑器，单 HTML 核心架构，打开即用，完全免费。
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/woyin2024/lengyi-markdown-editor)](https://github.com/woyin2024/lengyi-markdown-editor/stargazers)
-[![Issues](https://img.shields.io/github/issues/woyin2024/lengyi-markdown-editor)](https://github.com/woyin2024/lengyi-markdown-editor/issues)
+[![Stars](https://img.shields.io/github/stars/chnbsdan/markdown-editor)](https://github.com/chnbsdan/markdown-editor/stargazers)
+[![Issues](https://img.shields.io/github/issues/chnbsdan/markdown-editor)](https://github.com/chnbsdan/markdown-editor/issues)
 
 ---
 
